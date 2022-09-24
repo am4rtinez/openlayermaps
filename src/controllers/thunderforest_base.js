@@ -3,7 +3,7 @@ import XYZ from 'ol/source/XYZ';
 
 const API_THUNDERFOREST = import.meta.env.VITE_API_THUNDERFOREST
 
-const attributions = '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' +
+const attributions = 'Maps <a href="https://www.thunderforest.com" target="_blank">&copy; Thunderforest</a> ' +
   '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>';
 
 
@@ -12,7 +12,8 @@ export const opencyclemap = new TileLayer({
 	type: 'base',
 	visible: false,
 	source: new XYZ({
-			url: 'https://{a-c}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
+		attributions: attributions,
+		url: 'https://{a-c}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
 	})
 })
 
@@ -21,7 +22,8 @@ export const transport = new TileLayer({
 	type: 'base',
 	visible: false,
 	source: new XYZ({
-			url: 'https://{a-c}.tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
+		attributions: attributions,
+		url: 'https://{a-c}.tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
 	})
 })
 
@@ -30,7 +32,8 @@ export const landscape = new TileLayer({
 	type: 'base',
 	visible: false,
 	source: new XYZ({
-			url: 'https://{a-c}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
+		attributions: attributions,
+		url: 'https://{a-c}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
 	})
 })
 
@@ -39,7 +42,8 @@ export const outdoors = new TileLayer({
 	type: 'base',
 	visible: false,
 	source: new XYZ({
-			url: 'https://{a-c}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
+		attributions: attributions,
+		url: 'https://{a-c}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
 	})
 })
 
@@ -48,7 +52,8 @@ export const transport_dark = new TileLayer({
 	type: 'base',
 	visible: false,
 	source: new XYZ({
-			url: 'https://{a-c}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
+		attributions: attributions,
+		url: 'https://{a-c}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
 	})
 })
 
@@ -57,7 +62,8 @@ export const pioneer = new TileLayer({
 	type: 'base',
 	visible: false,
 	source: new XYZ({
-			url: 'https://{a-c}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
+		attributions: attributions,
+		url: 'https://{a-c}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
 	})
 })
 
@@ -66,7 +72,8 @@ export const mobile_atlas = new TileLayer({
 	type: 'base',
 	visible: false,
 	source: new XYZ({
-			url: 'https://{a-c}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
+		attributions: attributions,
+		url: 'https://{a-c}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
 	})
 })
 
@@ -75,6 +82,7 @@ export const neighbourhood = new TileLayer({
 	type: 'base',
 	visible: false,
 	source: new XYZ({
-			url: 'https://{a-c}.tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
+		attributions: attributions,
+		url: 'https://{a-c}.tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
 	})
 })
