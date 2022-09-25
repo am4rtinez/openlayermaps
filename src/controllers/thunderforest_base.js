@@ -86,3 +86,4 @@ export const neighbourhood = new TileLayer({
 		url: 'https://{a-c}.tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=' + API_THUNDERFOREST
 	})
 })
+

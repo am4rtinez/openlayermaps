@@ -12,11 +12,11 @@ import { ZoomSlider, ScaleLine, Rotate, FullScreen } from 'ol/control';
 
 import LayerSwitcher from 'ol-layerswitcher';
 
-import { osm, watercolor, terrain, toner } from './controllers/carto_base'
+import { osm, watercolor, terrain, toner, opentopomap, memomaps_transport } from './controllers/carto_base'
 import { topoLayer, streets, maptiler_outdoor } from './controllers/maptiler_base'
 import { opencyclemap, transport, landscape, outdoors, transport_dark, pioneer, mobile_atlas, neighbourhood } from './controllers/thunderforest_base'
 import * as Mapbox from './controllers/mapbox_base'
-
+import { openseamap } from './controllers/layers'
 
 import { gjson_campos_futbol, gjson_rotondas } from './controllers/geoserver'
 
@@ -31,7 +31,10 @@ const cartografia_base = new LayerGroup({
 		osm,
 		watercolor,
 		terrain,
-		toner
+		toner,
+		opentopomap,
+		memomaps_transport,
+		openseamap
 	]
 })
 
@@ -79,6 +82,13 @@ const geoserver = new LayerGroup({
 	]
 })
 
+const layers = new LayerGroup({
+	'title': 'Other Layers',
+	layers: [
+		openseamap
+	]
+})
+
 const map = new Map({
   target: 'map',
   view: new View({
@@ -90,7 +100,8 @@ const map = new Map({
 		maptiler_base,
 		mapbox_base,
 		thunderforest_base,
-		geoserver
+		geoserver,
+		layers
 	],
 });
 
@@ -98,14 +109,16 @@ const layerSwitcher = new LayerSwitcher({
   reverse: false,
   groupSelectStyle: 'group'
 });
-map.addControl(layerSwitcher);
 
 const rotateControl = new Rotate({
-  autoHide: false
+	autoHide: false
 });
+
 const fullScreen = new FullScreen()
 
 const zoomslider = new ZoomSlider();
+
+map.addControl(layerSwitcher);
 map.addControl(zoomslider);
 map.addControl(rotateControl);
 map.addControl(fullScreen);
