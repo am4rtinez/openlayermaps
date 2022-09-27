@@ -1,0 +1,118 @@
+[
+	{
+		"url": "https://servicios.idee.es/wms-inspire/ocupacion-suelo",
+		"url_capabilities": "https://servicios.idee.es/wms-inspire/ocupacion-suelo?request=GetCapabilities&service=WMS",
+		"name": "WMS",
+		"title": "Ocupación de suelo de España",
+		"abstract": "Información de Ocupación de Suelo de España (SIOSE) 2014 y CORINE Land Cover 2018. La denominación de las capas es conforme con las especificaciones de la Directiva Inspire 2007/2/EC (nombre, título) así como estilo Inspire por defecto. Servicio de visualización WMS 1.3.0 conforme al perfil Inspire de ISO 19128:2005",
+		"layers": [
+			{
+				"name": "LC.LandCoverSurfaces",
+				"title": "Superficies de Cubierta terrestre",
+				"abstract": "Representación de datos espaciales correspondientes al tema Cubierta terrestre del Anexo II de la Directiva Inspire y Anexo I de LISIGE. Datos procedentes de CORINE Land Cover 2018 y SIOSE 2014. Para escalas menores de 1:50.000 se distinguen las clases correspondientes al nivel 3 de CORINE Land Cover; para mayores, la clasificación de cubierta terrestre correspondiente a la nomenclatura establecida por el CODIIGE para SIOSE."
+			},
+			{
+				"name": "LU.ExistingLandUse",
+				"title": "Usos de suelo existentes",
+				"abstract": "Representación de datos espaciales correspondientes al tema Usos del Suelo del Anexo III de la Directiva Inspire y Anexo II de LISIGE. Datos procedentes de CORINE 2018 y Sistema de Información de Ocupación del Suelo en España (SIOSE) 2014. Se utiliza la nomenclatura de clases de Usos del Suelo HILUCS, distinguiendo las siguientes clases: 1_1_Uso agrícola, 1_2_Uso forestal, 1_3_Minas y canteras, 1_4_Pesca y acuicultura, 2_Sector secundario, 3_Sector terciario, 3_1_Servicios comerciales, 3_3_Servicios comunitarios, 3_4_Servicios recreativos y culturales, 4_Redes de transporte y logística, 4_1_Redes de transporte, 4_3_Utilidades, 5_Uso residencial, 6_1_Áreas de transición, 6_2_Áreas abandonadas, 6_3_Áreas naturales sin uso económico, 6_3_1_Zonas terrestres sin uso económico, 6_3_2_Zonas de agua sin uso económico, 6_6_Uso desconocido."
+			}
+		]
+	},
+	{
+		"url": "https://www.ign.es/wms-inspire/redes-geodesicas",
+		"url_capabilities": "https://www.ign.es/wms-inspire/redes-geodesicas?request=GetCapabilities&service=WMS",
+		"name": "WMS",
+		"title": "Redes Geodésicas del IGN de España",
+		"abstract": "Redes geodésicas del IGN en España: Red de Estaciones de Referencia GNSS (ERGNSS), Red de Nivelación de Alta Precisión (REDNAP), Red Geodésica Nacional por Técnicas Espaciales (REGENTE) y Red de Orden Inferior (ROI). Las etiquetas, para todas las capas, de las estaciones se visualizan a partir de la escala 1:5.000.000. Esta información forma parte del Equipamiento Geográfico de Referencia Nacional, según se recoge en el Anexo I, parte 1 de LISIGE. Servicio WMS 1.3.0 conforme a ISO 19128:2005.",
+		"layers": [
+			{
+				"name": "RED_ERGNSS",
+				"title": "Red de Estaciones de Referencia GNSS (ERGNSS)",
+				"abstract": "Contiene la información relativa a la Red de Estaciones de Referencia GNSS (ERGNSS): código (con enlace a reseña) y nombre de estación."
+			},
+			{
+				"name": "RED_NAP",
+				"title": "Red de Nivelación de Alta Precisión (REDNAP)",
+				"abstract": "Contiene la información relativa a la Red Española de Nivelación de Alta Precisión (REDNAP): número, señal (con enlace a reseña), tipo, grupo y línea (con enlace a reseña)"
+			},
+			{
+				"name": "RED_REGENTE",
+				"title": "Red REGENTE",
+				"abstract": "Contiene la información relativa a la Red Geodésica Nacional por Técnicas Espaciales (REGENTE): nombre (con enlace a reseña), número, municipio y provincia."
+			},
+			{
+				"name": "RED_ROI",
+				"title": "Red de Orden Inferior (ROI)",
+				"abstract": "Contiene la información relativa a la Red de Orden Inferior (ROI): nombre (con enlace a reseña), número, municipio y provincia."
+			}
+		]
+	},
+	{
+		"url": "https://www.ign.es/wms-inspire/geofisica",
+		"url_capabilities": "https://www.ign.es/wms-inspire/geofisica?request=GetCapabilities&service=WMS",
+		"name": "WMS",
+		"title": "Información sísmica de España del IGN",
+		"abstract": "Información sobre peligrosidad sísmica, estaciones sísmicas y el catálogo de terremotos del IGN. Todas las capas tienen asociado un estilo de visualización definido por el IGN y además, si pertenece a un tema Inspire, el estilo Inspire por defecto. Servicio de visualización WMS 1.3.0 conforme al perfil Inspire de ISO 19128:2005",
+		"layers": [
+			{
+				"name": "Ultimos10dias",
+				"title": "Terremotos últimos 10 días",
+				"abstract": "Terremotos registrados en los últimos 10 días de magnitud igual o superior a 1.5."
+			},
+			{
+				"name": "Ultimos30dias",
+				"title": "Terremotos últimos 30 días",
+				"abstract": "Terremotos registrados en los últimos 30 días de magnitud igual o superior a 1.5."
+			},
+			{
+				"name": "Ultimos365dias",
+				"title": "Terremotos últimos 365 días",
+				"abstract": "Terremotos registrados en los últimos 12 meses de magnitud igual o superior a 1.5."
+			},
+			{
+				"name": "GE.Geophysics.seismologicalStation",
+				"title": "Estaciones Sísmicas",
+				"abstract": "Estaciones sismicas del IGN. Pertenece al Tema Geología del Anexo II de INSPIRE."
+			},
+			{
+				"name": "NZ.ObservedEven",
+				"title": "Evento observado",
+				"abstract": "Terremotos catalogados en el IGN. Pertenece al Tema Zonas de Riesgos Naturales del Anexo III de INSPIRE."
+			},
+			{
+				"name": "NZ.HazardArea",
+				"title": "Área de peligro",
+				"abstract": "Peligrosidad sísmica. Pertenece al Tema Zonas de Riesgos Naturales del Anexo III de INSPIRE y al Anexo II de LISIGE, tema 12 Zonas de riesgos naturales y antrópicos. Expresa en relación al valor de la gravedad, g, la aceleración sísmica básica, a (un valor característico de la aceleración horizontal de la superficie del terreno) y el coeficiente de contribución K, que tiene en cuenta la influencia de los distintos tipos de terremotos esperados en la peligrosidad sísmica de cada punto. La capa NZ.HazardArea muestra los valores de la aceleración sísmica y los municipios. Tiene asociados dos estilos de simbolización: uno definido por el IGN y otro definido por Inspire."
+			}
+		]
+	},
+	{
+		"url": "https://www.ign.es/wms-inspire/unidades-administrativas",
+		"url_capabilities": "https://www.ign.es/wms-inspire/unidades-administrativas?request=GetCapabilities&service=WMS",
+		"name": "WMS",
+		"title": "Unidades administrativas de España",
+		"abstract": "Unidades administrativas y límites administrativos con tres niveles de administración (comunidad autónoma, provincia y municipio). Cada capa posee el nombre, título y estilo que establece Inspire y otros estilos definidos por el IGN. Esta información forma parte del Equipamiento Geográfico de Referencia Nacional, según se recoge en el Anexo I, parte 1 de LISIGE: Unidades administrativas en que se dividan las áreas en las que los Estados miembros tienen y/o ejercen derechos jurisdiccionales, a efectos de administración local, regional y nacional, separadas por límites administrativos. Servicio de visualización WMS 1.3.0 conforme al perfil Inspire de ISO 19128:2005.",
+		"layers": [
+			{
+				"name": "AU.AdministrativeUnit",
+				"title": "Unidad administrativa",
+				"abstract": "Representación de unidades administrativas de España. Se clasifican en 3 niveles. El segundo nivel corresponde a las comunidades autónomas; el tercer nivel, a las provincias; el cuarto nivel, a los municipios."
+			}
+		]
+	},
+	{
+		"url": "https://www.ign.es/wms-inspire/mapa-raster",
+		"url_capabilities": "https://www.ign.es/wms-inspire/mapa-raster?request=GetCapabilities&service=WMS",
+		"name": "WMS",
+		"title": "Cartografía Ráster de España del IGN",
+		"abstract": "Cartografía raster del IGN a distintas escalas. Se publica el Mapa de España a escala 1:2.000.000 hasta una resolución de 420 m/píxel. El Mapa de España a escala 1:1.250.000 hasta una resolución de 104,44 m/píxel. El Mapa de España a escala 1:500.000 hasta una resolución de 40,04 m/píxel. El Mapa Provincial a escala 1:200.000 hasta una resolución de 20,16 m/píxel. El Mapa Topográfico Nacional a escala 1:50.000 hasta una resolución de 5,04 m/píxel. El Mapa Topográfico Nacional a escala 1:25.000 a partir de una resolución de 5,04 m/pixel y el Mapa Topográfico Nacional Alta Resolución a partir de una resolución de 1.4 m/pixel. Se considera un tamaño estándar de píxel de 0,28 mm. Servicio WMS 1.3.0 conforme a ISO 19128:2005. Capa de fondo elaborada a partir de GEBCO Compilation Group (2021) GEBCO 2021 Grid (doi:10.5285/a29c5465-b138-234d-e053-6c86abc040b9)",
+		"layers": [
+			{
+				"name": "mtn_rasterizado",
+				"title": "Mapas raster del IGN",
+				"abstract": "Capa de cartografía raster del IGN. Datos mostrados en función de la escala de visualización: - Mapa 2M: hasta 420m/px. - Mapa 1M: hasta 104.44 m/px. - Mapa 500: hasta 40.04 m/px. - Mapa 200: hasta 20.16 m/px. - MTN50: hasta 7 m/px. - MTN25: desde 7 m/px -MTN25AR: desde 1.4 m/px"
+			}
+		]
+	}
+	
+]
